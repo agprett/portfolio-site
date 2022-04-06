@@ -1,0 +1,53 @@
+header {
+  height: 50px;
+  width: 85vw;
+  position: fixed;
+  top: 15px;
+  left: 7.5vw;
+  background-color: #5990c6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+button {
+  background-color: none;
+  background: none;
+  border: none;
+}
+
+#top {
+  height: 55vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('imgs/weathered.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#about-me {
+  height: 45vh;
+  width: 65vw;
+}
+
+.about-breakdown {
+  width: 45vw;
+  height: 50vh;
+  background-color: #5990c6;
+}
+
+#education {
+  height: 35vh;
+}
