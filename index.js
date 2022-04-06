@@ -1,18 +1,16 @@
+const navButtons = document.querySelectorAll('header button')
+
 const scrollToTag = (element) => {
   if(element === 'contact'){
-    console.log(element)
-    document.getElementById(element).scrollIntoView(false)
+    document.getElementById(element).scrollIntoView({block: 'end', behavior: 'smooth'})
   } else if(element === 'top') {
-    console.log(element)
-    document.getElementById(element).scrollIntoView()
+    document.getElementById(element).scrollIntoView({behavior: 'smooth'})
   } else {
-    console.log(element)
-    document.getElementById(element).scrollIntoView()
-    window.scrollBy(0, -75)
+    window.scrollTo({
+      top: document.getElementById(element).getBoundingClientRect().top + window.pageYOffset - 85,
+      behavior: 'smooth'})
   }
 }
-
-const navButtons = document.querySelectorAll('header button')
 
 navButtons.forEach(button => {
   button.addEventListener('click', (event) => {

@@ -1,3 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: none;
+  background: none;
+  border: none;
+}
+
+.section-title {
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
 header {
   height: 50px;
   width: 85vw;
@@ -9,12 +28,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-}
-
-button {
-  background-color: none;
-  background: none;
-  border: none;
+  z-index: 1;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px;
 }
 
 #top {
@@ -31,10 +47,14 @@ button {
 }
 
 #about {
+  width: 100vw;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  background-image: radial-gradient(ellipse 75% 95%, #EBEBEB 70%, #5C5C5C);
+  padding: 45px 0px 35px;
 }
 
 #about-me {
@@ -43,6 +63,7 @@ button {
 }
 
 .about-breakdown {
+  position: relative;
   width: 45vw;
   height: 50vh;
   background-color: #5990c6;
@@ -50,4 +71,31 @@ button {
 
 #education {
   height: 35vh;
+}
+
+#skills {
+  height: 40vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FFFAFA;
+  padding: 0px 22.5vw;
+}
+
+#projects {
+  height: 85vh;
+  width: 100vw;
+  padding: 35px 0px;
+  position: relative;
+  background-image: radial-gradient(ellipse 75% 110% at 50% 60%, #EBEBEB 70%, #5C5C5C);
+}
+
+#contact {
+  height: 30vh;
+  width: 100vw;
+  position: relative;
+  background-color: #5990c6;
 }
