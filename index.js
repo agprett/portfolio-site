@@ -1,4 +1,4 @@
-const navButtons = document.querySelectorAll('header button')
+const navButtons = document.querySelectorAll('nav button')
 
 const scrollToTag = (element) => {
   if(element === 'contact'){
