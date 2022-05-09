@@ -39,13 +39,26 @@ nav {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-image: url('imgs/weathered.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   color: whitesmoke;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 48pt;
+}
+
+.section-title {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 24pt;
 }
 
 #about {
@@ -57,12 +70,12 @@ nav {
   align-items: center;
   /* background-image: radial-gradient(ellipse 75% 110% at 50% 40%, #EBEBEB 70%, #5C5C5C); */
   background-image: radial-gradient(ellipse 75% 95%, #EBEBEB 70%, #5C5C5C);
-  padding: 45px 0px 35px;
+  padding: 60px 0px 35px;
 }
 
 .about-pic {
   width: 35%;
-  border: solid 2px #5990c6;
+  border: solid 4px #5990c6;
   border-radius: 10px;
 }
 
@@ -78,6 +91,13 @@ nav {
   height: 50vh;
   background-color: #5990c6;
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 5px 5px 25px;
 }
 
 #education {
@@ -125,6 +145,11 @@ nav {
   box-shadow: 5px 5px 25px;
 }
 
+h3 {
+  font-size: 18pt;
+  text-decoration: underline;
+}
+
 .project-pics {
   width: 75%;
 }
@@ -134,7 +159,7 @@ nav {
 }
 
 .project-links {
-  width: 50%;
+  width: 75%;
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -159,6 +184,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 15px 0px 0px;
 }
 
 #contact-desc {
