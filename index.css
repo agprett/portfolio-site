@@ -18,6 +18,7 @@ button {
   left: 0px;
   width: 100%;
   text-align: center;
+  text-decoration: underline;
 }
 
 nav {
@@ -54,10 +55,6 @@ h1 {
   font-size: 48pt;
 }
 
-.section-title {
-  text-decoration: underline;
-}
-
 h2 {
   font-size: 24pt;
 }
@@ -89,20 +86,37 @@ h2 {
 .about-breakdown {
   position: relative;
   width: 45vw;
-  height: 50vh;
+  max-height: 350px;
   background-color: #5990c6;
   margin-top: 25px;
+  padding: 30px 0px 30px 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
   border-radius: 25px;
   box-shadow: 5px 5px 25px;
+  scroll-behavior: auto;
+  overflow: auto;
 }
 
-#education {
-  height: 35vh;
+.larger-font {
+  font-size: 18pt;
+}
+
+.education-display {
+  width: 92%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.education-award {
+  font-size: 14pt;
+  padding-left: 10px;
+}
+
+ul {
+  padding-left: 35px;
 }
 
 #skills {
@@ -110,7 +124,7 @@ h2 {
   width: 100vw;
   position: relative;
   background-color: #FFFAFA;
-  padding: 0px 20vw;
+  padding: 0px 5vw;
   background-image: url('imgs/weathered.png');
   background-position: center;
   background-size: 100% 175%;
@@ -125,6 +139,23 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.language-display {
+  height: 50%;
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14pt;
+  font-weight: 600;
+  /* background-color: #5C5C5C;
+  border-radius: 25px; */
+}
+
+.language-pic {
+  font-size: 64pt;
 }
 
 #projects {
@@ -151,7 +182,7 @@ h2 {
   box-shadow: 5px 5px 25px;
 }
 
-h3 {
+.project-title {
   font-size: 18pt;
   text-decoration: underline;
 }
@@ -199,12 +230,14 @@ h3 {
 }
 
 #contact-desc {
-  width: 35%;
+  width: 45%;
+  font-size: 14pt;
+  font-weight: 600;
   text-align: center;
 }
 
 #contact-links {
-  height: 85%;
+  height: 65%;
   width: 45%;
   display: flex;
   flex-direction: column;
