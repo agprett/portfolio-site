@@ -20,16 +20,87 @@ let languages = [
     img: '<i class="devicon-css3-plain colored language-pic"></i>'
   },
   {
-    name: 'D3',
-    img: '<i class="devicon-d3js-plain colored language-pic"></i>'
-  },
-  {
     name: 'Node',
     img: '<i class="devicon-nodejs-plain colored language-pic"></i>'
   },
   {
+    name: 'Python',
+    img: '<i class="devicon-python-plain colored language-pic"></i>'
+  },
+  {
     name: 'PostgreSQL',
     img: '<i class="devicon-postgresql-plain colored language-pic"></i>'
+  },
+  {
+    name: 'Linux',
+    img: '<i class="devicon-linux-plain colored language-pic"></i>'
+  }
+]
+
+let education = [
+  {
+    school: 'BYU-Idaho',
+    graduated: 'In Progress',
+    award: 'Computer Science Degree',
+    addedNotes: []
+  },
+  {
+    school: 'Devmountain',
+    graduated: 'May, 2020',
+    award: 'Full Stack Web Development Certificate',
+    addedNotes: ['Transitioned mid-course to a fully remote learning environment', 'Solo and group work experience']
+  }
+]
+
+let experience = [
+  {
+    position: 'Mentor',
+    company: 'Devmountain',
+    start: 'November 2021',
+    end: 'Present',
+    descriptions: ['Teach new programmers the foundational principles of coding', 'Work with instructors and curriculum planners to ensure students are taught foundational principles in the most efficient and successful way', 'Plan and provide additional support for students as they learn this new skill set']
+  },
+  {
+    position: 'Skilled Facilities Maintenance Technician',
+    company: 'Walmart',
+    start: 'December 2020',
+    end: 'October 2021',
+    descriptions: ['Maintain, diagnose issues, and perform maintenance on facilities, fixtures and equipment', 'Utilize knowledge in multiple craft skills including: plumbing, electrical, carpentry, material handling equipment, and food equipment', 'Manage work orders and routine maintenance schedules by completing and providing required written and electronic information']
+  }
+]
+
+let projects = [
+  {
+    title: 'Dragonmasters',
+    img: 'imgs/encounters.png',
+    desc: 'This site is a work-in-progress Dungeon and Dragons site. I coded a good amount so my friends good use a beta version and I am going back now to start a organized and planned version that follows solid coding principles. You can follow the progress and additions from the trello board or github!',
+    languages: 'React, Axios, Node, Express, PostgreSQL',
+    links: [
+      {
+        link: 'https://trello.com/invite/b/92gHsvbB/ATTI2b9da9185422a49dd103eab06447d858ABA8FA1F/dragonmaster',
+        name: 'Trello Board'
+      },
+      {
+        link: 'https://github.com/agprett/dragonmasters',
+        name: 'Github Repo'
+      }
+    ]
+  },
+  {
+    title: 'Lemonade Truck',
+    img: 'imgs/lemonade-site.png',
+    desc: 'This site is a mock site for a fake lemonade truck business. It has a description of the business, a booking feature and a place to see and leave reviews!',
+    languages: 'Javascript, Axios, HTML/CSS, Node, Express, PostgreSQL',
+    links: [
+      {
+        link: 'https://lemonade-truck.herokuapp.com/',
+        name: 'Hosted Site'
+      },
+      {
+        link: 'https://github.com/agprett/lemonade-site',
+        name: 'Github Repo'
+      }
+    ]
   }
 ]
 
@@ -49,20 +120,6 @@ languages.forEach(language => {
   languagesDisplay.appendChild(languageDisp)
 })
 
-let education = [
-  {
-    school: 'BYU-Idaho',
-    graduated: 'In Progress',
-    award: 'Computer Science Degree',
-    addedNotes: []
-  },
-  {
-    school: 'Devmountain',
-    graduated: 'May, 2020',
-    award: 'Full Stack Web Development Certificate',
-    addedNotes: ['Transitioned mid-course to a fully remote learning environment', 'Solo and group work experience']
-  }
-]
 
 const educationSection = document.getElementById('education')
 
@@ -98,22 +155,6 @@ education.forEach(edu => {
   eduDisplay.style.height = `${eduDisplay.clientHeight + 10}px`
 })
 
-let experience = [
-  {
-    position: 'Foundations Mentor',
-    company: 'Devmountain',
-    start: 'November 2021',
-    end: 'Present',
-    descriptions: ['Teach new programmers the foundational principles of coding', 'Work with instructors and curriculum planners to ensure students are taught foundational principles in the most efficient and successful way', 'Plan and provide additional support for students as they learn this new skill set']
-  },
-  {
-    position: 'Skilled Facilities Maintenance Technician',
-    company: 'Walmart',
-    start: 'December 2020',
-    end: 'October 2021',
-    descriptions: ['Maintain, diagnose issues, and perform maintenance on facilities, fixtures and equipment', 'Utilize knowledge in multiple craft skills including: plumbing, electrical, carpentry, material handling equipment, and food equipment', 'Manage work orders and routine maintenance schedules by completing and providing required written and electronic information']
-  }
-]
 
 const experienceSection = document.getElementById('experience')
 
@@ -149,6 +190,53 @@ experience.forEach(exp => {
   expDisplay.style.height = `${expDisplay.clientHeight + 10}px`
 })
 
+
+const projectsSection = document.getElementById('projects-display')
+
+projects.forEach(proj => {
+  const project = document.createElement('div')
+
+  project.classList.add('project')
+
+  const title = document.createElement('h3')
+  title.classList.add('project-title')
+  title.textContent = proj.title
+
+  const img = document.createElement('img')
+  img.src = proj.img
+  img.alt = 'site-picture'
+  img.classList.add('project-pics')
+
+  const desc = document.createElement('p')
+  desc.textContent = proj.desc
+  desc.classList.add('project-desc')
+
+  const languages = document.createElement('p')
+  languages.textContent = proj.languages
+  
+  const projectLinks = document.createElement('div')
+  projectLinks.classList.add('project-links')
+  proj.links.forEach(li => {
+    const link = document.createElement('a')
+    
+    link.href = li.link
+    link.classList.add('link-btn')
+    link.target = '_blank'
+    link.textContent = li.name
+    
+    projectLinks.appendChild(link)
+  });
+
+  project.appendChild(title)
+  project.appendChild(img)
+  project.appendChild(desc)
+  project.appendChild(languages)
+  project.appendChild(projectLinks)
+
+  projectsSection.appendChild(project)
+})
+
+
 const navButtons = document.querySelectorAll('nav button')
 
 const scrollToTag = (element) => {
@@ -169,11 +257,4 @@ navButtons.forEach(button => {
 
     scrollToTag(button.value)
   })
-})
-
-const brokenSite = document.getElementById('broken-site')
-
-brokenSite.addEventListener('click', (event) => {
-  event.preventDefault()
-  alert(`I'm very sorry, but with some recent security updates I did, the site is no longer functioning. I am working hard to get it back up and running. Please refer to the Github repo if you want a look at what I've been doing!`)
 })
