@@ -73,7 +73,7 @@ let projects = [
   {
     title: 'Dragonmasters',
     img: 'imgs/encounters.png',
-    desc: 'This site is a work-in-progress Dungeon and Dragons site. I coded a good amount so my friends good use a beta version and I am going back now to start a organized and planned version that follows solid coding principles. You can follow the progress and additions from the trello board or github!',
+    desc: 'This site is a work-in-progress Dungeon and Dragons site. I coded a good amount so my friends could use a beta version and I am going back now to start a organized and planned version that follows solid coding principles. You can follow the progress and additions from the trello board or github!',
     languages: 'React, Axios, Node, Express, PostgreSQL',
     links: [
       {
