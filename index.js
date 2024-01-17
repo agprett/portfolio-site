@@ -1,260 +1,406 @@
 let languages = [
   {
-    name: 'Javascript',
-    img: '<i class="devicon-javascript-plain colored language-pic"></i>'
+    name: "Javascript",
+    img: '<i class="devicon-javascript-plain colored language-pic"></i>',
   },
   {
-    name: 'React',
-    img: '<i class="devicon-react-original colored language-pic"></i>'
+    name: "React",
+    img: '<i class="devicon-react-original colored language-pic"></i>',
   },
   {
-    name: 'Redux',
-    img: '<i class="devicon-redux-original colored language-pic"></i>'
+    name: "Redux",
+    img: '<i class="devicon-redux-original colored language-pic"></i>',
   },
   {
-    name: 'HTML',
-    img: '<i class="devicon-html5-plain colored language-pic"></i>'
+    name: "HTML",
+    img: '<i class="devicon-html5-plain colored language-pic"></i>',
   },
   {
-    name: 'CSS',
-    img: '<i class="devicon-css3-plain colored language-pic"></i>'
+    name: "CSS",
+    img: '<i class="devicon-css3-plain colored language-pic"></i>',
   },
   {
-    name: 'Node',
-    img: '<i class="devicon-nodejs-plain colored language-pic"></i>'
+    name: "Node",
+    img: '<i class="devicon-nodejs-plain colored language-pic"></i>',
   },
   {
-    name: 'Python',
-    img: '<i class="devicon-python-plain colored language-pic"></i>'
+    name: "Python",
+    img: '<i class="devicon-python-plain colored language-pic"></i>',
   },
   {
-    name: 'PostgreSQL',
-    img: '<i class="devicon-postgresql-plain colored language-pic"></i>'
+    name: "PostgreSQL",
+    img: '<i class="devicon-postgresql-plain colored language-pic"></i>',
   },
   {
-    name: 'Linux',
-    img: '<i class="devicon-linux-plain colored language-pic"></i>'
-  }
-]
-
-let education = [
-  {
-    school: 'BYU-Idaho',
-    graduated: 'In Progress',
-    award: 'Computer Science Degree',
-    addedNotes: []
+    name: "Linux",
+    img: '<i class="devicon-linux-plain language-pic"></i>',
   },
-  {
-    school: 'Devmountain',
-    graduated: 'May, 2020',
-    award: 'Full Stack Web Development Certificate',
-    addedNotes: ['Transitioned mid-course to a fully remote learning environment', 'Solo and group work experience']
-  }
-]
+];
 
 let experience = [
   {
-    position: 'Mentor',
-    company: 'Devmountain',
-    start: 'November 2021',
-    end: 'Present',
-    descriptions: ['Teach new programmers the foundational principles of coding', 'Work with instructors and curriculum planners to ensure students are taught foundational principles in the most efficient and successful way', 'Plan and provide additional support for students as they learn this new skill set']
+    position: "Mentor",
+    company: "Devmountain",
+    start: "November 2021",
+    end: "Present",
+    descriptions: [
+      "Teach new programmers the foundational principles of coding and web development",
+      "Work with instructors and curriculum planners to ensure students are taught foundational principles in the most efficient and successful way",
+      "Plan and provide additional support for students as they learn this new skill set",
+    ],
   },
   {
-    position: 'Skilled Facilities Maintenance Technician',
-    company: 'Walmart',
-    start: 'December 2020',
-    end: 'October 2021',
-    descriptions: ['Maintain, diagnose issues, and perform maintenance on facilities, fixtures and equipment', 'Utilize knowledge in multiple craft skills including: plumbing, electrical, carpentry, material handling equipment, and food equipment', 'Manage work orders and routine maintenance schedules by completing and providing required written and electronic information']
-  }
-]
+    position: "Skilled Facilities Maintenance Technician",
+    company: "Walmart",
+    start: "December 2020",
+    end: "October 2021",
+    descriptions: [
+      "Maintain, diagnose issues, and perform maintenance on facilities, fixtures and equipment",
+      "Utilize knowledge in multiple craft skills including: plumbing, electrical, carpentry, material handling equipment, and food equipment",
+      "Manage work orders and routine maintenance schedules by completing and providing required written and electronic information",
+    ],
+  },
+];
+
+let education = [
+  {
+    school: "BYU-Idaho",
+    graduated: "Expected Graduation: May, 2027",
+    award: "Applied Technology Degree",
+    addedNotes: [
+      "Current GPA: 3.9",
+      "Will recieve certificates in web development, system administration and database administration",
+    ],
+  },
+  {
+    school: "Devmountain",
+    graduated: "Graduation: May, 2020",
+    award: "Full Stack Web Development Certificate",
+    addedNotes: [
+      "Learned the basics of planning, development and testing of web applications using React and Express",
+      "Transitioned mid-course to a fully remote learning environment",
+      "Solo and group work experience",
+    ],
+  },
+];
 
 let projects = [
   {
-    title: 'Dragonmasters',
-    img: 'imgs/encounters.png',
-    desc: 'This site is a work-in-progress Dungeon and Dragons site. I coded a good amount so my friends could use a beta version and I am going back now to start a organized and planned version that follows solid coding principles. You can follow the progress and additions from the trello board or github!',
-    languages: 'React, Axios, Node, Express, PostgreSQL',
+    title: "Dragonmasters",
+    img: "imgs/encounters.png",
+    desc: "This site is a work-in-progress Dungeon and Dragons site. I coded a good amount so my friends could use a beta version and I am going back now to start a organized and planned version that follows solid coding principles. You can follow the progress and additions from the trello board or github!",
+    languages: ["React", "Axios", "Node", "Express", "PostgreSQL"],
     links: [
       {
-        link: 'https://trello.com/invite/b/92gHsvbB/ATTI2b9da9185422a49dd103eab06447d858ABA8FA1F/dragonmaster',
-        name: 'Trello Board'
+        link: "https://trello.com/invite/b/92gHsvbB/ATTI2b9da9185422a49dd103eab06447d858ABA8FA1F/dragonmaster",
+        name: "Trello Board",
       },
       {
-        link: 'https://github.com/agprett/dragonmasters',
-        name: 'Github Repo'
-      }
-    ]
+        link: "https://github.com/agprett/dragonmasters",
+        name: "Github Repo",
+      },
+    ],
   },
   {
-    title: 'Lemonade Truck',
-    img: 'imgs/lemonade-site.png',
-    desc: 'This site is a mock site for a fake lemonade truck business. It has a description of the business, a booking feature and a place to see and leave reviews!',
-    languages: 'Javascript, Axios, HTML/CSS, Node, Express, PostgreSQL',
+    title: "Bank Game",
+    img: "imgs/bank-game.png",
+    desc: "This web app is used to track the score for a game called bank. The instructions for the game are linked in the github repo. This static site uses React for the base and Bootstrap for styling. The app uses redux to track player information and state for all the other data. This was a fun mini-project I did because after playing the game I thought it would be fun to figure out how to best track and store scores throughout the different aspects of the game!",
+    languages: ["React", "Bootstrap", "Redux", "React-Router"],
     links: [
       {
-        link: 'https://lemonade-truck.herokuapp.com/',
-        name: 'Hosted Site'
+        link: "https://bank-game-rakf1t4pu-agpretts-projects.vercel.app/",
+        name: "Hosted Site",
       },
       {
-        link: 'https://github.com/agprett/lemonade-site',
-        name: 'Github Repo'
-      }
-    ]
+        link: "https://github.com/agprett/bank-game",
+        name: "Github Repo",
+      },
+    ],
+  },
+  {
+    title: "Lemonade Truck",
+    img: "imgs/lemonade-site.png",
+    desc: "This site is a mock site for a fake lemonade truck business. I created it as a side project for a group project I was working on for a business class I was taking. I wanted to make a site using only javascript, html and css for the front end. I used an express server for the backend and a postgres database. It has a description of the business, a booking feature and a place to see and leave reviews!",
+    languages: [
+      "Javascript",
+      "Axios",
+      "HTML/CSS",
+      "Node",
+      "Express",
+      "PostgreSQL",
+    ],
+    links: [
+      {
+        link: "https://lemonade-truck.herokuapp.com/",
+        name: "Hosted Site",
+      },
+      {
+        link: "https://github.com/agprett/lemonade-site",
+        name: "Github Repo",
+      },
+    ],
+  },
+];
+
+let nums = ["One", "Two", "Three", "Four", "Five"];
+
+const educationSection = document.getElementById("education-items");
+
+education.forEach((edu, i) => {
+  const eduDisplay = document.createElement("div");
+  eduDisplay.classList.add("accordion-item", "mb-2", "pe-0");
+
+  const h2 = document.createElement("h2");
+  h2.classList.add("accordion-header");
+
+  const headerBtn = document.createElement("button");
+  headerBtn.classList.add(
+    "accordion-button",
+    "collapsed",
+    "d-flex",
+    "justify-content-between"
+  );
+  headerBtn.type = "button";
+  headerBtn.setAttribute("data-bs-toggle", "collapse");
+  headerBtn.setAttribute("data-bs-target", `#flush-edu-collapse${i}`);
+  headerBtn.setAttribute("aria-expanded", "false");
+  headerBtn.setAttribute("aria-controls", `flush-edu-collapse${i}`);
+  if (edu.graduated.includes("Expected")) {
+    headerBtn.innerHTML = `<p class='m-0'>${edu.school} - ${edu.award}, In Progress</p>`;
+  } else {
+    headerBtn.innerHTML = `<p class='m-0'>${edu.school} - ${edu.award}</p>`;
   }
-]
 
-const languagesDisplay = document.getElementById('languages-display')
+  h2.appendChild(headerBtn);
 
-languagesDisplay.innerHTML = ''
+  const accordionBodyWrap = document.createElement("div");
+  accordionBodyWrap.id = `flush-edu-collapse${i}`;
+  accordionBodyWrap.classList.add("accordion-collapse", "collapse");
+  accordionBodyWrap.setAttribute("data-bs-parent", "#education-items");
 
-languages.forEach(language => {
-  const languageDisp = document.createElement('div')
+  const accordionBody = document.createElement("div");
+  accordionBody.classList.add("accordion-body");
 
-  languageDisp.classList.add('language-display')
+  const p = document.createElement("p");
+  p.classList.add("education-award");
+  p.innerHTML = `${edu.graduated}`;
+
+  const ul = document.createElement("ul");
+
+  edu.addedNotes.forEach((note) => {
+    const li = document.createElement("li");
+
+    li.innerHTML = note;
+
+    ul.appendChild(li);
+  });
+
+  accordionBody.appendChild(p);
+  accordionBody.appendChild(ul);
+
+  accordionBodyWrap.appendChild(accordionBody);
+
+  eduDisplay.appendChild(h2);
+  eduDisplay.appendChild(accordionBodyWrap);
+
+  educationSection.appendChild(eduDisplay);
+});
+
+const experienceSection = document.getElementById("experience-items");
+
+experience.forEach((exp, i) => {
+  const expDisplay = document.createElement("div");
+  expDisplay.classList.add("accordion-item", "mb-2", "pe-0");
+
+  const h2 = document.createElement("h2");
+  h2.classList.add("accordion-header");
+
+  const headerBtn = document.createElement("button");
+  headerBtn.classList.add(
+    "accordion-button",
+    "collapsed",
+    "d-flex",
+    "justify-content-between"
+  );
+  headerBtn.type = "button";
+  headerBtn.setAttribute("data-bs-toggle", "collapse");
+  headerBtn.setAttribute("data-bs-target", `#flush-exp-collapse${i}`);
+  headerBtn.setAttribute("aria-expanded", "false");
+  headerBtn.setAttribute("aria-controls", `flush-exp-collapse${i}`);
+  headerBtn.innerHTML = `${exp.position} - ${exp.company}`;
+
+  h2.appendChild(headerBtn);
+
+  const accordionBodyWrap = document.createElement("div");
+  accordionBodyWrap.id = `flush-exp-collapse${i}`;
+  accordionBodyWrap.classList.add("accordion-collapse", "collapse");
+  accordionBodyWrap.setAttribute("data-bs-parent", "#experience-items");
+
+  const accordionBody = document.createElement("div");
+  accordionBody.classList.add("accordion-body");
+
+  const p = document.createElement("p");
+  p.classList.add("education-award");
+  p.innerHTML = `${exp.start} - ${exp.end}`;
+
+  const ul = document.createElement("ul");
+
+  exp.descriptions.forEach((desc) => {
+    const li = document.createElement("li");
+
+    li.innerHTML = desc;
+
+    ul.appendChild(li);
+  });
+
+  accordionBody.appendChild(p);
+  accordionBody.appendChild(ul);
+
+  accordionBodyWrap.appendChild(accordionBody);
+
+  expDisplay.appendChild(h2);
+  expDisplay.appendChild(accordionBodyWrap);
+
+  experienceSection.appendChild(expDisplay);
+});
+
+const languagesDisplay = document.getElementById("languages-display");
+
+languagesDisplay.innerHTML = "";
+
+languages.forEach((language) => {
+  const languageDisp = document.createElement("div");
+
+  languageDisp.classList.add(
+    "col",
+    "d-flex",
+    "flex-column",
+    "justify-content-center",
+    "align-items-center",
+    "my-3"
+  );
 
   languageDisp.innerHTML = `
   ${language.img}
-  <p>${language.name}</p>`
+  <h4>${language.name}</h4>`;
 
-  languagesDisplay.appendChild(languageDisp)
-})
+  languagesDisplay.appendChild(languageDisp);
+});
 
+const projectsSection = document.getElementById("projects-display");
 
-const educationSection = document.getElementById('education')
+projects.forEach((proj, i) => {
+  const project = document.createElement("div");
 
-education.forEach(edu => {
-  const eduDisplay = document.createElement('div')
+  const inDiv = document.querySelector(".carousel-indicators");
+  const indicator = document.createElement("button");
+  indicator["type"] = "button";
+  indicator.setAttribute("data-bs-target", "#carouselProjects");
+  indicator.setAttribute("data-bs-slide-to", `${i}`);
+  indicator.setAttribute("aria-label", `Slide ${i + 1}`);
 
-  eduDisplay.classList.add('education-display')
+  project.classList.add(
+    "project",
+    "carousel-item",
+    "card",
+    "p-0",
+    "container-fluid"
+  );
+  if (i === 0) {
+    project.classList.add("active");
+    indicator.classList.add("active");
+    indicator.setAttribute("aria-current", "true");
+  }
 
-  const h3 = document.createElement('h3')
-  h3.innerHTML = `${edu.school}, Graduated: ${edu.graduated}`
+  inDiv.appendChild(indicator);
 
-  const p = document.createElement('p')
-  p.classList.add('education-award')
-  p.innerHTML = edu.award
+  const img = document.createElement("img");
+  img.src = proj.img;
+  img.alt = "site-picture";
+  img.classList.add("card-img-top", 'project-img');
 
-  const ul = document.createElement('ul')
+  project.appendChild(img);
 
-  edu.addedNotes.forEach(note => {
-    const li = document.createElement('li')
+  const cardBody = document.createElement("div");
+  cardBody.classList.add("card-body", "p-3");
 
-    li.innerHTML = note
+  const title = document.createElement("h3");
+  title.classList.add("card-title");
+  title.textContent = proj.title;
 
-    ul.appendChild(li)
-  })
+  const desc = document.createElement("p");
+  desc.textContent = proj.desc;
+  desc.classList.add("card-text");
 
-  eduDisplay.appendChild(h3)
-  eduDisplay.appendChild(p)
-  eduDisplay.appendChild(ul)
+  cardBody.appendChild(title);
+  cardBody.appendChild(desc);
 
-  
-  educationSection.appendChild(eduDisplay)
-  
-  eduDisplay.style.height = `${eduDisplay.clientHeight + 10}px`
-})
+  const languageBody = document.createElement("div");
+  languageBody.classList.add(
+    "card-links",
+    "card-body",
+    "border-top",
+    "row",
+    "row-cols-auto",
+    "justify-content-evenly",
+    "m-0"
+  );
 
+  proj.languages.forEach((language) => {
+    const tag = document.createElement("p");
+    tag.classList.add("col", "text-center", "m-1", "project-languages");
+    tag.innerText = language;
 
-const experienceSection = document.getElementById('experience')
-
-experience.forEach(exp => {
-  const expDisplay = document.createElement('div')
-
-  expDisplay.classList.add('education-display')
-
-  const h3 = document.createElement('h3')
-  h3.innerHTML = exp.position
-
-  const p = document.createElement('p')
-  p.classList.add('education-award')
-  p.innerHTML = `${exp.company}, ${exp.start} - ${exp.end}`
-
-  const ul = document.createElement('ul')
-
-  exp.descriptions.forEach(desc => {
-    const li = document.createElement('li')
-
-    li.innerHTML = desc
-
-    ul.appendChild(li)
-  })
-
-  expDisplay.appendChild(h3)
-  expDisplay.appendChild(p)
-  expDisplay.appendChild(ul)
-
-  
-  experienceSection.appendChild(expDisplay)
-  
-  expDisplay.style.height = `${expDisplay.clientHeight + 10}px`
-})
-
-
-const projectsSection = document.getElementById('projects-display')
-
-projects.forEach(proj => {
-  const project = document.createElement('div')
-
-  project.classList.add('project')
-
-  const title = document.createElement('h3')
-  title.classList.add('project-title')
-  title.textContent = proj.title
-
-  const img = document.createElement('img')
-  img.src = proj.img
-  img.alt = 'site-picture'
-  img.classList.add('project-pics')
-
-  const desc = document.createElement('p')
-  desc.textContent = proj.desc
-  desc.classList.add('project-desc')
-
-  const languages = document.createElement('p')
-  languages.textContent = proj.languages
-  
-  const projectLinks = document.createElement('div')
-  projectLinks.classList.add('project-links')
-  proj.links.forEach(li => {
-    const link = document.createElement('a')
-    
-    link.href = li.link
-    link.classList.add('link-btn')
-    link.target = '_blank'
-    link.textContent = li.name
-    
-    projectLinks.appendChild(link)
+    languageBody.appendChild(tag);
   });
 
-  project.appendChild(title)
-  project.appendChild(img)
-  project.appendChild(desc)
-  project.appendChild(languages)
-  project.appendChild(projectLinks)
+  const linkBody = document.createElement("div");
+  linkBody.classList.add("card-links", "card-body", "border-top", "row", "m-0");
 
-  projectsSection.appendChild(project)
-})
+  proj.links.forEach((li) => {
+    const link = document.createElement("a");
 
+    link.href = li.link;
+    link.classList.add("card-links", "col", "text-center");
+    link.target = "_blank";
+    link.textContent = li.name;
 
-const navButtons = document.querySelectorAll('nav button')
+    linkBody.appendChild(link);
+  });
+
+  project.appendChild(cardBody);
+  project.appendChild(languageBody);
+  project.appendChild(linkBody);
+
+  projectsSection.appendChild(project);
+});
+
+const navButtons = document.querySelectorAll(".navbar-links");
 
 const scrollToTag = (element) => {
-  if(element === 'contact'){
-    document.getElementById(element).scrollIntoView({block: 'end', behavior: 'smooth'})
-  } else if(element === 'top') {
-    document.getElementById(element).scrollIntoView({behavior: 'smooth'})
+  if (element === "contact") {
+    document
+      .getElementById(element)
+      .scrollIntoView({ block: "end", behavior: "smooth" });
+  } else if (element === "top") {
+    document
+      .querySelector("body")
+      .scrollIntoView({ block: "start", behavior: "smooth" });
   } else {
     window.scrollTo({
-      top: document.getElementById(element).getBoundingClientRect().top + window.pageYOffset - 85,
-      behavior: 'smooth'})
+      top:
+        document.getElementById(element).getBoundingClientRect().top +
+        window.scrollY -
+        125,
+      behavior: "smooth",
+    });
   }
-}
+};
 
-navButtons.forEach(button => {
-  button.addEventListener('click', (event) => {
-    event.preventDefault()
+navButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
 
-    scrollToTag(button.value)
-  })
-})
+    scrollToTag(button.value);
+  });
+});
