@@ -39,7 +39,7 @@ let languages = [
 
 let experience = [
   {
-    position: "Mentor",
+    position: "Assistant Instructor",
     company: "Devmountain",
     start: "November 2021",
     end: "Present",
@@ -63,15 +63,6 @@ let experience = [
 ];
 
 let education = [
-  {
-    school: "BYU-Idaho",
-    graduated: "Expected Graduation: May, 2027",
-    award: "Applied Technology Degree",
-    addedNotes: [
-      "Current GPA: 3.9",
-      "Will recieve certificates in web development, system administration and database administration",
-    ],
-  },
   {
     school: "Devmountain",
     graduated: "Graduation: May, 2020",
