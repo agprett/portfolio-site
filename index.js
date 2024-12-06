@@ -44,9 +44,9 @@ let experience = [
     start: "November 2021",
     end: "Present",
     descriptions: [
-      "Teach new programmers the foundational principles of coding and web development",
-      "Work with instructors and curriculum planners to ensure students are taught foundational principles in the most efficient and successful way",
-      "Plan and provide additional support for students as they learn this new skill set",
+      "Delivered comprehensive instruction to over 150 students on foundational coding principles, including full-stack development, database management, and design principles",
+      "Taught key languages, libraries, and technologies, including HTML, CSS, JavaScript, PostgreSQL, React, Redux, Sequelize, Node.js, Git, and GitHub",
+      "Collaborated with instructors and curriculum developers to optimize teaching methods, tailor support strategies, and improve student learning outcomes, increasing graduation rates by 10%"
     ],
   },
   {
@@ -55,9 +55,10 @@ let experience = [
     start: "December 2020",
     end: "October 2021",
     descriptions: [
-      "Maintain, diagnose issues, and perform maintenance on facilities, fixtures and equipment",
-      "Utilize knowledge in multiple craft skills including: plumbing, electrical, carpentry, material handling equipment, and food equipment",
-      "Manage work orders and routine maintenance schedules by completing and providing required written and electronic information",
+      "Oversaw and resolved issues related to facilities, fixtures, and equipment through routine maintenance and diagnostics",
+      "Managed and completed 20-45 maintenance tasks across 4 different locations weekly, ensuring minimal downtime and enhanced operational efficiency",
+      "Applied expertise in plumbing, electrical work, carpentry, material handling equipment, and food service equipment to address diverse maintenance needs",
+      "Efficiently managed and prioritized work orders, ensuring timely and effective completion of routine maintenance tasks, reducing maintenance costs by 13%",
     ],
   },
 ];
@@ -364,34 +365,4 @@ projects.forEach((proj, i) => {
   project.appendChild(linkBody);
 
   projectsSection.appendChild(project);
-});
-
-const navButtons = document.querySelectorAll(".navbar-links");
-
-const scrollToTag = (element) => {
-  if (element === "contact") {
-    document
-      .getElementById(element)
-      .scrollIntoView({ block: "end", behavior: "smooth" });
-  } else if (element === "top") {
-    document
-      .querySelector("body")
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  } else {
-    window.scrollTo({
-      top:
-        document.getElementById(element).getBoundingClientRect().top +
-        window.scrollY -
-        125,
-      behavior: "smooth",
-    });
-  }
-};
-
-navButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
-
-    scrollToTag(button.value);
-  });
 });

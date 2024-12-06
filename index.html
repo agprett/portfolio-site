@@ -12,110 +12,118 @@
   <link rel="stylesheet" href="index.css">
   <title>Alec Prettyman</title>
 </head>
+
 <body>
-  <div class="container-fluid container-center vw-100">
-    
-    <nav id="nav-display" class="navbar navbar-dark fixed-top navbar-expand-lg px-sm-1 px-lg-3">
-      <div class="container-fluid">
-        <h1 class="navbar-brand align-middle m-0">Alec Prettyman</h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-          </span>
-        </button>
-        <div class="collapse navbar-collapse"  id="navbarSupportedContent">
-          <ul class="navbar-nav w-100 justify-content-end">
-            <li class="nav-item">
-              <button class="nav-link navbar-links" value="top">HOME</button>
-            </li>
-            <li class="nav-item dropdown">
-              <button class="nav-link nav-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</button>
-              <ul class="dropdown-menu navbar-dropdown">
-                <li>
-                  <button class="nav-link navbar-links dropdown-item" value="about">ME</button>
-                </li>
-                <li>
-                  <button class="nav-link navbar-links dropdown-item" value="education">EDUCATION</button>
-                </li>
-                <li>
-                  <button class="nav-link navbar-links dropdown-item" value="experience">EXPERIENCE</button>
-                </li>
-                <li>
-                  <button class="nav-link navbar-links dropdown-item" value="skills">SKILLS</button>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <button class="nav-link navbar-links" value="projects">PROJECTS</button>
-            </li>
-            <li class="nav-item">
-              <button class="nav-link navbar-links" value="contact">CONTACT</button>
-            </li>
-          </ul>
-        </div>
+  <div id="background"></div>
+  
+    <nav id="nav-display-horizontal" class="navbar navbar-dark d-none d-sm-block d-lg-none position-fixed top-0">
+      <div class="container-fluid">      
+        <ul class="navbar-nav w-100">
+          <li class="nav-item">
+            <a class="nav-link navbar-links" href="#top">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-links" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-links" href="#projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-links" href="#contact">CONTACT</a>
+          </li>
+        </ul>
       </div>
     </nav>
-    
-    <header id="top">
-      <h1 class="display-2">ALEC PRETTYMAN</h1>
-      <div>
-        <h2 class="display-4">Software Engineer</h2>
-        <h2 class="display-4">Full Stack Web Developer</h2>
-      </div>
-    </header>
-    
-    <section id="about" class="container-fluid my-3 justify-content-center">
-      <h2 class="display-6 row justify-content-center mb-4">About Me</h2>
-      <div id="me">
-        <img
-          src="imgs/wife-and-me.png"
-          alt="wife-and-i"
-          class="about-pic rounded float-start"
-        />
-        <p>Hello! My name is Alec Prettyman. I have been programming for a little over 3 years now. My first exposure to code was in late 2019 when a coworker of mine started a web development bootcamp called Devmountain. After talking with him for a few weeks about what he was learning, I applied to the bootcamp and completed the 3 month course. Since then I have gone back to work at the same bootcamp because I want to help other people the same way my instructors helped me. I also wanted to continue to build on my knowledge and grow as a programmer so I started taking night classes to learn more about server, operating system, and database programming.</p>
+
+  <nav id="nav-display-vertical" class="navbar navbar-dark d-none d-lg-flex flex-column justify-content-center align-items-center h-100 ps-5 pe-2 position-fixed start-0">
+    <div class="container-fluid">      
+      <ul class="navbar-nav w-100 justify-content-end">
+        <li class="nav-item d-flex justify-content-end">
+          <a class="nav-link navbar-links active" href="#top">HOME</a>
+        </li>
+        <li class="nav-item d-flex justify-content-end">
+          <a class="nav-link navbar-links" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item d-flex justify-content-end">
+          <a class="nav-link navbar-links" href="#projects">PROJECTS</a>
+        </li>
+        <li class="nav-item d-flex justify-content-end">
+          <a class="nav-link navbar-links" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid vw-xs-100 vw-lg-75 px-xs-2 px-lg-0 overflow-none" data-bs-spy="scroll" data-bs-target="#nav-display" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="row">
+      <div class="col-2 d-none d-lg-block"></div>
+
+      <div class="col p-0">
+
+        <header id="top" class="ps-5">
+          <h1 class="display-5">ALEC PRETTYMAN</h1>
+          <div>
+            <h2>Software Engineer</h2>
+            <h2>Full Stack Web Developer</h2>
+          </div>
+        </header>
         
-        <p>While I spend a lot of my time coding, I also have a lot of hobbies I like to try to find time for as well. I like to ride my motorcycle, practice woodworking, play video games and sit down to watch a show with my wife while we do a puzzle! I love card and board games like Settlers of Catan or Risk. I'm always looking for games to play or projects to work on, whether it's programming or woodworking!</p>
+        <section id="about" class="container-fluid py-4 justify-content-center">
+          <h2 class="display-6 row justify-content-center mb-4">About Me</h2>
+          <div id="me">
+            <img
+              src="imgs/wife-and-me.png"
+              alt="wife-and-i"
+              class="about-pic rounded float-start"
+            />
+            <p>Hi! My name is Alec Prettyman. I have been programming since the beginning of 2020. My first exposure to code was in late 2019 when a coworker of mine started a web development bootcamp called Devmountain. After talking with him for a few weeks about what he was learning, I applied to the bootcamp and completed the 3 month course. Since then I have gone back to work at the same bootcamp because I want to help other people the same way my instructors helped me. I also wanted to continue to build on my knowledge and grow as a programmer so I started taking night classes to learn more about server, operating system, and database programming.</p>
+            
+            <p>While I spend a lot of my time coding, I also have a lot of hobbies I like to try to find time for as well. I like to ride my motorcycle, practice woodworking, play video games and sit down to watch a show with my wife while we do a puzzle! I love card and board games like Settlers of Catan or Risk. I'm always looking for games to play or projects to work on, whether it's programming or woodworking!</p>
+          </div>
+          <section class="container-fluid justify-content-center row my-4 p-0" id="education">
+            <h3 class="display-7 row justify-content-center mb-3">Education</h3>
+            <div class="accordion accordion-flush accordion-dark pe-0" id="education-items"></div>
+          </section>
+          <section class="container-fluid justify-content-center row my-4 p-0" id="experience">
+            <h3 class="display-7 row justify-content-center mb-3">Experience</h3>
+            <div class="accordion accordion-flush accordion-dark pe-0" id="experience-items"></div>
+          </section>
+        </section>
+      
+        <section id="skills" class="container-fluid row justify-content-center py-3">
+          <h2 class="display-7 row justify-content-center">Skills</h2>
+          <div id="languages-display" class="row row-cols-3 row-cols-md-5 justify-content-evenly p-0"></div>
+        </section>
+      
+        <section id="projects" class="container-fluid row py-4 justify-content-center">
+          <h2 class="display-6 row justify-content-center p-0">Projects</h2>
+          <div id="carouselProjects" class="carousel slide row justify-content-center p-0 m-0">
+            <div class="carousel-indicators m-0"></div>
+            <div id="projects-display" class="carousel-inner"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      
+        <section id="contact" class="container-fluid text-center">
+          <h2 class="display-6 row justify-content-center">Contact</h2>
+          <div class="row justify-content-center">
+            <p class="col-12">Thanks for checking out my profile and I hope you enjoyed!</p>
+            <p class="col-12">Feel free to check out my github or connect with me on LinkedIn if you're interested in seeing more!</p>
+            <a href="https://www.linkedin.com/in/alecprettyman/" target="_blank" class="col-3 col-md-2">LinkedIn</a>
+            <a href="https://github.com/agprett" target="_blank" class="col-3 col-md-2">Github</a>
+            <p class="col-12 col-md-2">alecprettymandev@gmail.com</p>
+          </div>
+        </section>
       </div>
-      <section class="container-fluid justify-content-center row my-4 p-0" id="education">
-        <h3 class="display-7 row justify-content-center mb-3">Education</h3>
-        <div class="accordion accordion-flush accordion-dark pe-0" id="education-items"></div>
-      </section>
-      <section class="container-fluid justify-content-center row my-4 p-0" id="experience">
-        <h3 class="display-7 row justify-content-center mb-3">Experience</h3>
-        <div class="accordion accordion-flush accordion-dark pe-0" id="experience-items"></div>
-      </section>
-    </section>
-  
-    <section id="skills" class="container-fluid row justify-content-center p-0 my-5">
-      <h2 class="display-7 row justify-content-center">Skills</h2>
-      <div id="languages-display" class="row row-cols-3 row-cols-md-5 justify-content-evenly p-0"></div>
-    </section>
-  
-    <section id="projects" class="container-fluid row p-0 justify-content-center">
-      <h2 class="display-6 row justify-content-center p-0">Projects</h2>
-      <div id="carouselProjects" class="carousel slide row justify-content-center p-0 m-0">
-        <div class="carousel-indicators m-0"></div>
-        <div id="projects-display" class="carousel-inner"></div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-  
-    <section id="contact" class="container-fluid border-top text-center">
-      <h2 class="display-6 row justify-content-center">Contact</h2>
-      <div class="row justify-content-center">
-        <p class="col-12">Thanks for checking out my profile and I hope you enjoyed!</p>
-        <p class="col-12">Feel free to check out my github or connect with me on LinkedIn if you're interested in seeing more!</p>
-        <a href="https://www.linkedin.com/in/alecprettyman/" target="_blank" class="col-3 col-md-2">LinkedIn</a>
-        <a href="https://github.com/agprett" target="_blank" class="col-3 col-md-2">Github</a>
-        <p class="col-12 col-md-2">alecprettymandev@gmail.com</p>
-      </div>
-    </section>
+    </div>
+    
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
