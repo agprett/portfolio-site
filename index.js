@@ -42,7 +42,7 @@ let experience = [
     position: "Assistant Instructor",
     company: "Devmountain",
     start: "November 2021",
-    end: "Present",
+    end: "June 2024",
     descriptions: [
       "Delivered comprehensive instruction to over 150 students on foundational coding principles, including full-stack development, database management, and design principles",
       "Taught key languages, libraries, and technologies, including HTML, CSS, JavaScript, PostgreSQL, React, Redux, Sequelize, Node.js, Git, and GitHub",
@@ -83,6 +83,10 @@ let projects = [
     desc: "This site is a work-in-progress Dungeon and Dragons site. I coded a good amount so my friends could use a beta version and I am going back now to start a organized and planned version that follows solid coding principles. You can follow the progress and additions from the trello board or github!",
     languages: ["React", "Axios", "Node", "Express", "PostgreSQL"],
     links: [
+      {
+        link: "https://dragonmasterscodex.com",
+        name: "Hosted Site"
+      },
       {
         link: "https://trello.com/invite/b/92gHsvbB/ATTI2b9da9185422a49dd103eab06447d858ABA8FA1F/dragonmaster",
         name: "Trello Board",
